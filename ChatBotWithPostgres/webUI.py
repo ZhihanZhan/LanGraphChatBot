@@ -5,7 +5,7 @@ import logging
 import re
 
 
-# Author:@南哥AGI研习社 (B站 or YouTube 搜索“南哥AGI研习社”)
+
 
 
 # 设置日志模版
@@ -116,5 +116,6 @@ with gr.Blocks() as demo:
 
 if __name__ == "__main__":
     demo.launch(server_name="127.0.0.1", server_port=7860)
+
 
 
