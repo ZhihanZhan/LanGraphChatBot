@@ -17,20 +17,20 @@ logger = logging.getLogger(__name__)
 MODEL_CONFIGS = {
     "openai": {
         "base_url": "https://nangeai.top/v1",
-        "api_key": "sk-0OWbyfzUSwajhvqGoNbjIEEWchM15CchgJ5hIaN6qh9I3XRl",
+        "api_key": " ",
         "chat_model": "gpt-4o-mini",
         "embedding_model": "text-embedding-3-small"
 
     },
     "oneapi": {
         "base_url": "http://139.224.72.218:3000/v1",
-        "api_key": "sk-EDjbeeCYkD1OnI9E48018a018d2d4f44958798A261137591",
+        "api_key": " ",
         "chat_model": "qwen-max",
         "embedding_model": "text-embedding-v1"
     },
     "qwen": {
         "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
-        "api_key": "sk-95aab531b4f04e508cf728c566f91fc3",
+        "api_key": " ",
         "chat_model": "qwen-turbo",
         "embedding_model": "text-embedding-v1"
     },
@@ -134,4 +134,5 @@ if __name__ == "__main__":
         # 测试无效类型
         llm_invalid = get_llm("invalid_type")
     except LLMInitializationError as e:
+
         logger.error(f"程序终止: {str(e)}")
