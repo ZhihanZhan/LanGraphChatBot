@@ -26,7 +26,7 @@ import uvicorn
 
 # 设置LangSmith环境变量 进行应用跟踪，实时了解应用中的每一步发生了什么
 # os.environ["LANGCHAIN_TRACING_V2"] = "true"
-# os.environ["LANGCHAIN_API_KEY"] = "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"
+# os.environ["LANGCHAIN_API_KEY"] = "yours"
 
 
 # 设置日志模版
@@ -299,5 +299,6 @@ if __name__ == "__main__":
     # uvicorn是一个用于运行ASGI应用的轻量级、超快速的ASGI服务器实现
     # 用于部署基于FastAPI框架的异步PythonWeb应用程序
     uvicorn.run(app, host="0.0.0.0", port=PORT)
+
 
 
