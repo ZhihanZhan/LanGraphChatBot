@@ -54,7 +54,7 @@ def create_graph(llm_type: str, pool) -> StateGraph:
             # 获取state中的消息进行消息过滤后存储新的记忆
             last_message = state["messages"][-1]
             if "记住" in last_message.content.lower():
-                memory = "我的频道是南哥AGI研习社。"
+                memory = "我是hana。"
                 store.put(namespace, str(uuid.uuid4()), {"data": memory})
             # 2、短期记忆逻辑 进行消息过滤
             messages = filter_messages(state["messages"])
@@ -176,4 +176,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
